@@ -1,0 +1,1040 @@
+/* les couleurs utilisées */
+:root{
+    --color1:#B11313;
+    --color2:#F1C530;
+    --color3:#114C92;
+    --color4:#000000;
+    --color5:#FFFFFF;
+}
+
+
+/* style pour tous les éléments et le body aussi */
+*,body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+body{
+    overflow-x: hidden;
+    background-color: var(--color1);
+    box-sizing: border-box;
+
+}
+div.container{
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+
+/* style pour l entete de la page home ou accueil */
+div.header_home{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    box-sizing: border-box;
+    background-color: #B11313;
+    z-index: 2000;
+
+}
+div.header_home div.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* style pour l entete de la page home ou accueil concernant logo */
+
+div.header_logo{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+div.header_logo img{
+    padding: 10px 15px;
+}
+nav label{
+    width: 40px;
+    height: 20px;
+    background:  transparent;
+    outline: none;
+    border: none;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+input#menus{
+    display: none;
+}
+nav label div{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+nav{
+    margin-top: 3vh;
+    position: relative;
+
+}
+nav ul{
+    display: block;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s;
+
+}
+nav ul li a:hover{
+    transition: all 0.3s;
+    color: rgb(37, 36, 36);
+
+}
+
+
+
+/*----------------------------------------------------*/
+/* ceci concerne la section 1 de la page home*/
+/*--------------------------------------------------------*/
+#section_1{
+    width: 100%;
+    margin-top: 80px;
+    z-index: -1;
+
+}
+div.image_home{
+    position: absolute;
+    z-index: -1;
+    left: 0%;
+
+}
+div.image_home img{
+    width: 100%;
+}
+div.section_1_head{
+    display: flex;
+    flex-direction: column;
+    padding-top: 12em;
+
+}
+div.section_1_head h1{
+    color: var(--color5);
+    font-style: italic;
+    font-size: 100px;
+    padding: 60px 0;
+
+}
+div.section_1_head div.section_1_btn{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+div.section_1_head div.section_1_btn a{
+    text-decoration: none;
+    width: 180px;
+    border: 1px solid white;
+    background: transparent;
+    border-radius: 12px;
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0;
+    color: white;
+    transition: 0.2s;
+
+}
+div.section_1_head div.section_1_btn a:nth-child(2){
+    margin-left: 15px;
+}
+div.section_1_head div.section_1_btn a:hover{
+    transition: 0.2s;
+    color: var(--color1);
+    background: var(--color5);
+}
+div.section_1_head div.section_1_sympa {
+    padding: 20px 0;
+    color: white;
+
+}
+div.section_1_body{
+    margin: 8em 0;
+    z-index: -1;
+
+}
+div.section_1_body div.section_1_title_2{
+    width: 55%;
+    overflow: hidden;
+    color: white;
+    padding: 20px 0;
+}
+div.section_1_body div.section_1_title_2 h1,div.section_1_body div.section_1_title_2 p{
+    padding-top: 20px;
+}
+div.section_1_body div.spider_list{
+    width: 100%;
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+
+}
+div.section_1_body div.spider_list div.spider_list_item{
+    width: 30%;
+    overflow: hidden;
+    height: 700px;
+    position: relative;
+}
+div.section_1_body div.spider_list div.spider_list_item:nth-child(2){
+    padding: 0 5%;
+}
+div.section_1_body div.spider_list div.spider_list_item img{
+    width: 100%;
+    padding: 10px 0;
+}
+div.section_1_body div.spider_list div.spider_list_item div.spider-info{
+    padding: 30px 0;
+    color: white;
+    width: 100%;
+
+}
+div.section_1_body div.spider_list div.spider_list_item div.spider-adversaires a{
+    position: absolute;
+    width: 60%;
+    margin: auto;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    bottom: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--color1);
+    padding: 5px 15px;
+    border: 1px border white;
+    background-color: white;
+    border-radius: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s;
+}
+div.section_1_body div.spider_list div.spider_list_item div.spider-adversaires a:hover{
+    transition: 0.2s;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+
+/*---------------------------------------------------------*/
+/*ceci concerne section_2 home*/
+/*---------------------------------------------------------*/
+div#section_2{
+    background-color: var(--color3);
+    position: relative;
+
+}
+div#section_2 div.section_2_form{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+
+}
+div#section_2 div.section_2_form form div.from_2_title{
+    width: 100%;
+}
+div#section_2 div.section_2_form form div.from_2_title h1,
+div#section_2 div.section_2_form form div.from_2_title p{
+    text-align: center;
+    color: white;
+
+}
+div#section_2 div.section_2_form form div.from_2_title h1{
+    padding: 20px 0;
+    font-style: italic;
+}
+div#section_2 div.section_2_form form div.from_2_title p{
+    padding-bottom: 25px;
+}
+div#section_2 div.section_2_form form div.form_2_group{
+    display: flex;
+    flex-direction: column;
+
+}
+div#section_2 div.section_2_form form div.form_2_group input{
+    width: 320px;
+    box-sizing: border-box;
+    margin: 10px auto;
+    height: 30px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 0 10px;
+
+}
+div#section_2 div.section_2_form form div.form_2_group input[type="submit"]{
+    width: 150px;
+    height: 50px;
+    background: transparent;
+    text-align: center;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 18px;
+    color: var(--color5);
+
+}
+div#section_2 div.section_2_form form div.form_2_group input[type="submit"]:hover{
+    background-color: var(--color5);
+    color: var(--color3);
+    transition: 0.25s;
+
+}
+
+/*---------------------------------------------------------*/
+/*ceci concerne section_3 home*/
+/*---------------------------------------------------------*/
+div#section_3{
+    display: flex;
+    position: relative;
+
+}
+div#section_3 div.section_3_image{
+    margin-right: -9%;
+    margin-bottom: -4px;
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+}
+div#section_3 div.section_3_image img{
+    width: 100%;
+
+}
+div#section_3 div.section_3_form{
+    margin: 40px auto;
+    margin-left: 10%;
+}
+div#section_3 div.section_3_form form{
+    width: 400px;
+    color: white;
+
+}
+div#section_3 div.section_3_form div.from_3_title{
+    padding-bottom: 60px;
+    width: 600px;
+    color: white;
+
+}
+div#section_3 div.section_3_form h1{
+    font-size: 3em;
+    font-style: italic;
+    padding-top: 20px;
+
+}
+div#section_3 div.section_3_form form div.form_3_group{
+    display: flex;
+    flex-direction: column;
+
+}
+div#section_3 div.section_3_form form div.form_3_group input{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 10px 0;
+    height: 40px;
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 20px;
+    padding: 0 10px;
+
+}
+div#section_3 div.section_3_form form div.form_3_group div{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+div#section_3 div.section_3_form form div.form_3_group div label{
+    cursor: pointer;
+}
+div#section_3 div.section_3_form form div.form_3_group div label a{
+    color: white;
+    transition: 0.2s;
+}
+div#section_3 div.section_3_form form div.form_3_group div label a:hover{
+    transition: 0.2s;
+    color: var(--color3);
+}
+div#section_3 div.section_3_form form div.form_3_group input[type="checkbox"]{
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    margin-right: 16px;
+}
+div#section_3 div.section_3_form form div.form_3_group input[type="submit"]{
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    margin-top: 20px;
+    background: var(--color5);
+    text-align: center;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 18px;
+    color: var(--color1);
+
+}
+div#section_3 div.section_3_form form div.form_3_group input[type="submit"]:hover{
+    background-color: var(--color1);
+    color: var(--color5);
+    transition: 0.25s;
+
+}
+
+/*---------------------------------------------------------*/
+/*ceci concerne footer de toute pages*/
+/*---------------------------------------------------------*/
+div#footer{
+    width: 100%;
+    background-color: var(--color4);
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+div#footer a#logo_footer{
+    display: flex;
+    align-items: center;
+
+}
+div#footer a#logo_footer img:nth-child(2){
+    padding: 0 10px;
+
+}
+div#footer div.footer_menus{
+    display: flex;
+    align-items: center;
+
+}
+div#footer a{
+    text-decoration: none;
+    transition: 0.2s;
+    color: white;
+    margin: 20px;
+
+}
+div#footer a:hover{
+    color: var(--color3);
+    transition: 0.2s;
+
+}
+div#footer select{
+    height: 25px;
+    width: 140px;
+    outline: none;
+    background-color: var(--color1);
+    color: white;
+    padding: 0 5px;
+    border: none;
+    border-radius: 14px;
+
+}
+div#footer p{
+    color: white;
+}
+div#footer div.footer_icons{
+    padding-bottom: 20px;
+    padding-top: 40px;
+
+}
+div#footer div.footer_icons div{
+    margin: 0 12px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: var(--color1);
+    display: inline-block;
+    position: relative;
+
+}
+div#footer div.footer_icons div img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+/************************************************************
+ * 
+ * 
+ * 
+ * LA PAGE ADVERSAIRE
+ * 
+ * 
+ * 
+ * 
+ * ********************************************************/
+div#section_1_adv{
+    margin-top: 80px;
+    width: 100%;
+    height: 500px;
+    background-image: url(../../Assets/Illustration/img7.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+div#section_1_adv div.section_1_adv_content{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+
+}
+div#section_1_adv div.section_1_adv_content h1{
+    font-size: 6em;
+    color: white;
+    font-style: italic;
+    padding: 5px 0;
+    text-transform: uppercase;
+
+}
+div#section_1_adv div.section_1_adv_content p{
+    color: white;
+    font-size: 1.5em;
+
+}
+
+div#section_2_adv div.section_2_adv_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 80px auto;
+
+}
+div#section_2_adv div.section_2_adv_content div.section_2_adv_content_item
+{
+    width: 28%;
+    height: 600px;
+    margin: 0 15px;
+    margin-top: -60px;
+    box-sizing: border-box;
+
+}
+div#section_2_adv div.section_2_adv_content div.section_2_adv_content_item img{
+    width: 100%;
+
+}
+div#section_2_adv div.section_2_adv_content div.section_2_adv_content_item div.section_2_adv_content_text {
+    border-left: 10px solid var(--color4);
+    border-bottom: 10px solid var(--color4);
+    border-right: 10px solid var(--color4);
+    width: auto;
+    height: 400px;
+    margin-top: -4px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding: 10px;
+}
+div#section_2_adv div.section_2_adv_content div.section_2_adv_content_item div.section_2_adv_content_text h2{
+    text-align: center;
+    padding: 8px 0;
+
+}
+
+
+
+
+/************************************************************
+ * 
+ * 
+ * 
+ * LA PAGE HERO
+ * 
+ * 
+ * 
+ * 
+ * ********************************************************/
+ div#section_1_hero{
+    margin-top: 80px;
+    width: 100%;
+    height: 500px;
+    background-image: url(../../Assets/Illustration/img19.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+div#section_1_hero div.section_1_hero_content{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-30%);
+    left: 10%;
+
+}
+div#section_1_hero div.section_1_hero_content h1{
+    font-size: 6em;
+    color: white;
+    font-style: italic;
+    padding: 5px 0;
+    text-transform: uppercase;
+
+}
+div#section_1_hero div.section_1_hero_content p{
+    color: white;
+    font-size: 1.5em;
+
+}
+div#section_2_hero div.container{
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-sizing: border-box;
+
+}
+div#section_2_hero div.section_2_hero_texte{
+    padding-right: 40px;
+    color: white;
+
+}
+div#section_2_hero div.section_2_hero_texte div.section_2_hero_texte_title{
+    padding: 50px 0;
+
+}
+div#section_2_hero div.section_2_hero_texte div.section_2_hero_texte_title h1{
+    text-transform: uppercase;
+    font-style: italic;
+
+}
+
+div#section_2_hero div.container div.section_2_hero_video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div#section_2_hero div.container video{
+    width: 100%;
+    height: 400px;
+
+}
+
+ div#section_3_hero{
+    margin-top: 80px;
+    width: 100%;
+    height: 400px;
+    background-image: url(../../Assets/Illustration/img20.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+div#section_3_hero div.section_3_hero_content{
+    width: 100%;
+    position: relative;
+    top: 40%;
+    transform: translateY(-90%);
+    left: 10%;
+
+}
+div#section_3_hero div.section_3_hero_content h1{
+    font-size: 3em;
+    color: white;
+    font-style: italic;
+    padding: 5px 0;
+    text-transform: uppercase;
+
+}
+div#section_3_hero div.section_3_hero_content p{
+    color: white;
+    font-size: 1.5em;
+
+}
+div#section_4_hero div.container{
+    margin: 80px auto;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+div#section_4_hero div.container span:nth-child(1){
+    padding-right: 15px;
+}
+div#section_4_hero div.container span:nth-child(2){
+    padding-left: 15px;
+}
+
+
+div#section_5_hero {
+    color: white;
+}
+div#section_5_hero h1{
+    font-style: italic;
+}
+div#section_5_hero div.section_5_hero_title h1{
+    padding: 5px 0;
+}
+div#section_5_hero div.section_5_hero_title h4{
+    padding-bottom: 25px;
+}
+div#section_5_hero div.section_5_hero_img_txt{
+    display: grid;
+    grid-template-columns: 60% 40%;
+
+}
+div#section_5_hero div.section_5_hero_img_txt div.image{
+    margin-right: 10px;
+    position: relative;
+    width: ;
+}
+div#section_5_hero div.section_5_hero_img_txt div.image img{
+    width: 70%;
+}
+div#section_5_hero div.section_5_hero_img_txt div.image img:nth-child(2){
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%,-25%);
+}
+div#section_5_hero div.section_5_hero_img_txt div.text h1{
+    padding: 4px 0;
+    margin-top: -20px;
+
+}
+div#section_5_hero div.section_5_hero_img_txt_2{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+}
+div#section_5_hero div.section_5_hero_img_txt_2 div.image,
+div#section_5_hero div.section_5_hero_img_txt_2 div.text{
+    width: 50%;
+}
+div#section_5_hero div.section_5_hero_img_txt_2 div.image{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+div#section_5_hero div.section_5_hero_img_txt_2 div.text{
+    margin-right: 10px;
+}
+div#section_5_hero div.section_5_hero_img_txt_2 div.image img{
+    margin-left: 45px;
+}
+div#section_6_hero {
+    margin-top: 150px;
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+
+}
+div#section_6_hero div.avengers{
+    background-color: var(--color1);
+    padding-left: 20%;
+}
+div#section_6_hero div.avengers h1{
+    padding: 20px;
+    font-style: italic;
+}
+div#section_6_hero div.avengers div.avengers_pictures{
+    padding: 20px;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ia ip"    
+    "ib ip"    
+    "ic id"    
+    "ie if";  
+
+}
+div#section_6_hero div.avengers div.avengers_pictures img:nth-child(1){
+    grid-area: ia;
+}
+div#section_6_hero div.avengers div.avengers_pictures img:nth-child(2){
+    grid-area: ib;
+}
+div#section_6_hero div.avengers div.avengers_pictures img:nth-child(3){grid-area: ic;}
+div#section_6_hero div.avengers div.avengers_pictures img:nth-child(4){grid-area: id;}
+div#section_6_hero div.avengers div.avengers_pictures img:nth-child(5){grid-area: ie;}
+div#section_6_hero div.avengers div.avengers_pictures img:nth-child(6){grid-area: if;}
+div#section_6_hero div.avengers div.avengers_pictures span{grid-area: ip;}
+div#section_6_hero div.fond_avengers{
+    background-image: url(../../Assets/Illustration/img32.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+div#section_6_hero div.avengers div.avengers_pictures img{
+    width: 95%;
+    padding: 10px 0px;
+    padding-right: 5px;
+}
+div#section_6_hero div.avengers div.avengers_pictures span{
+    width: 95%;
+
+}
+div#section_7{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url(../../Assets/Illustration/img33.png);
+
+}
+div#section_7 div.section_7_content{
+    width: 400px;
+    height: 100%;
+    float: right;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.3);
+    padding: 53.5px 30px;
+
+}
+div#section_7 div.section_7_content h1{
+    padding: 20px 0;
+    text-align: right;
+
+}
+div#section_7 div.section_7_content h4{
+    padding-bottom: 20px;
+    text-align: right;
+}
+
+
+/************************************************************
+ * 
+ * 
+ * 
+ * LA PAGE A PROPOS
+ * 
+ * 
+ * 
+ * 
+ * ********************************************************/
+
+
+div#section_1_pr{
+    margin-top: 80px;
+    background-color: var(--color2);
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+div#section_1_pr div.section_1_pr_image{
+    
+
+}
+div#section_1_pr div.section_1_pr_image img{
+    transform: rotateY(180deg);
+    width: 100%;
+
+}
+div#section_1_pr div.section_1_pr_content{
+    color: white;
+    margin-left: 10%;
+    margin-top: 30vh;
+
+}
+div#section_1_pr div.section_1_pr_content h1{
+    font-size: 8em;
+    font-style: italic;
+
+}
+div#section_1_pr div.section_1_pr_content p{
+    font-size: 2em;
+}
+div#section_2_pr{
+    margin: 80px 0;
+
+}
+div#section_2_pr div.section_2_pr_title{
+    color: white;
+    width: 50%;
+    margin-bottom: 40px;
+
+}
+div#section_2_pr div.section_2_pr_title h1,
+div#section_2_pr div.section_2_pr_title span{
+    padding: 10px 0;
+}
+
+div#section_2_pr div.section_2_pr_img_form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+div#section_2_pr div.section_2_pr_img_form img{
+    width: 100%;
+
+}
+div#section_2_pr div.section_2_pr_img_form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+div#section_2_pr div.section_2_pr_img_form form input{
+    width: 300px;
+    margin-bottom: 20px;
+    height: 30px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--color5);
+    border-radius: 15px;
+    padding: 0 10px;
+    outline: none;
+
+}
+div#section_2_pr div.section_2_pr_img_form form textarea{
+    height: 173px;
+    width: 300px;
+    margin-bottom: 20px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--color5);
+    border-radius: 15px;
+    padding: 0 10px;
+    outline: none;
+
+}
+div#section_2_pr div.section_2_pr_img_form form input[type="submit"]{
+    width: 150px;
+    margin-bottom: 0px;
+    height: 40px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid var(--color5);
+    border-radius: 15px;
+    padding: 0 10px;
+    outline: none;
+    text-align: center;
+    margin-top: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+div#section_2_pr div.section_2_pr_img_form form input[type="submit"]:hover{
+    background-color: white;
+    color: var(--color1);
+}
+div#section_3_pr{
+    background-color: var(--color3);
+    color: var(--color5);
+    padding: 60px 0;
+
+}
+div#section_3_pr div.span{
+    margin: 60px 0;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+}
+div#section_3_pr div.span span:nth-child(1){
+    margin-right: 10px;
+}
+div#section_3_pr div.span span:nth-child(2){
+    margin-left: 10px;
+}
+div#section_3_pr div.span ul{
+    margin-left: 20px;
+}
+div#section_3_pr div.btn_link{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+div#section_3_pr div.btn_link a{
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px 40px;
+    transition: 0.2s;
+    background-color: transparent;
+    border-radius: 15px;
+}
+div#section_3_pr div.btn_link a:hover{
+    transition: 0.2s;
+    background-color: white;
+    color: var(--color3);
+
+}
+
+/************************************************************
+ * 
+ * 
+ * 
+ * LA PAGE de BONUS
+ * 
+ * 
+ * 
+ * 
+ * ********************************************************/
+
+div#section_bonus{
+    margin-top: 80px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../Assets/Illustration/img35.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+div#section_bonus div.description{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    color: white;
+}
+div#section_bonus div.description h1{
+    font-size: 7em;
+    font-style: italic;
+    padding: 20px 0;
+
+}
+div#section_bonus div.description h4{
+    font-size: 2em;
+    padding: 10px 0;
+
+}
+
+
